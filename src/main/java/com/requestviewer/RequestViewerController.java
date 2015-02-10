@@ -19,7 +19,7 @@ public class RequestViewerController {
     private final static Logger LOGGER = LoggerFactory.getLogger(RequestViewerController.class);
     
     @RequestMapping("/")
-    public @ResponseBody String dumpRequest(HttpServletRequest request, HttpServletResponse response) {
+    public @ResponseBody String dumpRequest(HttpServletRequest request) {
 
         LOGGER.info("Headers...");
         LOGGER.info("==========");
